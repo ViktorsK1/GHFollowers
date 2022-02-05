@@ -17,12 +17,39 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // The method willConnectTo will created new UIWindow, sets the root view controller and makes this window the key window to be displayed.
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
+    
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = createTabbar()
         window?.makeKeyAndVisible() 
     }
+    
+    func createSearchNC() -> UINavigationController {
+        let searchVC = SearchVC()
+        searchVC.title = "Search"
+        searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        
+        return UINavigationController(rootViewController: searchVC)
+    }
 
+    
+    func createFavoritesNC() -> UINavigationController {
+        let favoritesListVC = FavoritesListVC()
+        favoritesListVC.title = "Favorites"
+        favoritesListVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        
+        return UINavigationController(rootViewController: favoritesListVC)
+    }
+    
+    func createTabbar() -> UITabBarController {
+        let tabBar = UITabBarController()
+        UITabBar.appearance().tintColor = .systemGreen
+        UITabBar.appearance().backgroundColor = .white
+        tabBar.viewControllers = [createSearchNC(), createFavoritesNC()]
+        
+        return tabBar
+    }
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // This method can be used to discard any resources that aren’t used anymore.
         // Called as the scene is being released by the system.
