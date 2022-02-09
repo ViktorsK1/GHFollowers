@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E045B7327B19E5B0094F0B1 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E045B7227B19E5B0094F0B1 /* FollowerListVC.swift */; };
 		5E1A68A427AE9C6B00A2C8E9 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1A68A327AE9C6B00A2C8E9 /* SearchVC.swift */; };
 		5E1A68A627AE9D3C00A2C8E9 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1A68A527AE9D3C00A2C8E9 /* FavoritesListVC.swift */; };
 		5E1A68AA27AFF77D00A2C8E9 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1A68A927AFF77D00A2C8E9 /* GFButton.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E045B7227B19E5B0094F0B1 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		5E1A68A327AE9C6B00A2C8E9 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		5E1A68A527AE9D3C00A2C8E9 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		5E1A68A927AFF77D00A2C8E9 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				5E1A68A527AE9D3C00A2C8E9 /* FavoritesListVC.swift */,
 				5E1A68A927AFF77D00A2C8E9 /* GFButton.swift */,
 				5E1A68AB27AFFCFB00A2C8E9 /* GFTextField.swift */,
+				5E045B7227B19E5B0094F0B1 /* FollowerListVC.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				5E1A68A627AE9D3C00A2C8E9 /* FavoritesListVC.swift in Sources */,
 				5E1A68AC27AFFCFB00A2C8E9 /* GFTextField.swift in Sources */,
 				5E4FBCE427AD417B0048848C /* AppDelegate.swift in Sources */,
+				5E045B7327B19E5B0094F0B1 /* FollowerListVC.swift in Sources */,
 				5E1A68A427AE9C6B00A2C8E9 /* SearchVC.swift in Sources */,
 				5E4FBCE627AD417B0048848C /* SceneDelegate.swift in Sources */,
 			);
